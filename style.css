@@ -1,5 +1,8 @@
 
 .nav-link:hover {
     color:red;
-    border-bottom:1px solid navy;
+    /*      border-bottom:1px solid navy; */
+}
+.card:hover{
+    cursor:pointer;
 }

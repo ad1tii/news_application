@@ -35,13 +35,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">IPL</a>
+              <a class="nav-link"  href="#" id="ipl" onclick="navItemClick('ipl')">IPL</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Finance</a>
+              <a class="nav-link" href="#" id="finance" onclick="navItemClick('finance')">Finance</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Politics</a>
+              <a class="nav-link" href="#" id="politics" onclick="navItemClick('politics')">Politics</a>
             </li>
           </ul>
           <form
@@ -51,13 +51,13 @@
             name="news_search"
           >
             <input
-              id="form_input"
+              id="search-text"
               class="form-control me-2"
               type="search"
               placeholder="Science"
               aria-label="Search"
             />
-            <button class="btn btn-outline-danger" type="submit">Search</button>
+            <button id="search-button"class="btn btn-outline-danger" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -65,16 +65,12 @@
     <!-- cards -->
     <main>
       <div class="container mt-5" id="">
-        <div class="row">
-          <div class="col-md-4" id="cards-container">
-            
-          </div>
-        </div>
+        <div class="row" id="cards-container"></div>
       </div>
     </main>
     <!-- template -->
     <template id="template-news-card">
-      <div class="card " id="template-news-card" >
+      <div class="card col-md-4 mb-3" id="template-news-card">
         <img
           src="https://via.placeholder.com/400x200"
           class="card-img-top"
@@ -82,13 +78,13 @@
           id="news-img"
         />
         <div class="card-body">
-          <h4 class="card-title" id="news-title">Card title</h4>
-          <h6 class="card-subtitle" id="news-source">xyz company</h6>
+          <h4 class="card-title" id="news-title">Card title</h4> 
+          <h6 class="card-subtitle disabled" id="news-source">xyz company</h6> <br>
           <p class="card-text" id="news-desc">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
       </div>
 
@@ -108,9 +104,6 @@
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div> -->
-
-
-      
     </template>
     <script src="index.js"></script>
     <script
