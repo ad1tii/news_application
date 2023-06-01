@@ -1,4 +1,4 @@
-// const API_KEY="99a9d9233c0192aba6435485fa9fa71a";
+const API_KEY="99a9d9233c0192aba6435485fa9fa71a";
 const url="https://gnews.io/api/v4/search?q=";
 const max=20;
 window.addEventListener('load',() => fetchNews("India"));
